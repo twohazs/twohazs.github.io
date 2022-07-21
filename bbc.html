@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technology - BBC News</title>
+<style type="text/css">
+	
+	body {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica,Arial,sans-serif;
+        cursor: pointer;
+     }
+
+
+	#topbar {
+         width: 1250px;
+         margin: 0 auto;  
+	     height: 40px;
+    	
+    	}
+
+     
+
+     #logo {
+     	width: 110px;
+        float: left;
+     }
+
+    #signin-image {
+    	   margin: 20px;
+           float: left;
+    }
+
+   #signin-text {
+   	    font-weight: bold;
+        font-size: 90%;
+        position: relative;
+        top: 22px;
+        right: 10px;
+        float: left;
+   }
+
+   #topbar-section {
+        float: left;
+        border-left: 1px #cccccc solid;
+        height: 50%;
+        margin-top: 15px;
+        margin-left: 50px;
+        padding-left: 32px;
+        padding-top: 5px;
+        font-weight: bold;
+   }
+
+   .topbar-menu {
+       padding: 20px 35px 0 0;
+       font-weight: bold;
+       float: left;
+       font-size: 80%;
+   }
+
+   #search-logo {
+          float: left;
+          height: 42px;       
+          position: relative;
+          bottom: 10px;
+          
+   }
+
+   #search-box {
+        background-color: #F6F6F6;
+        border: none;
+        height: 40px; 
+        font-weight: bold;
+        position: relative;
+        bottom: 10px;
+        cursor: pointer;
+}
+
+   .clear {
+   	   clear: both;
+   }
+
+    #menu-bar-container {
+       background-color: #B80000;
+       width: 100%;
+       height: 100px;
+    }
+
+    #menu-bar {
+       width: 1250px;
+       margin: auto;
+       
+    }
+
+    h1 {
+       padding: 0;
+       margin: 0;
+       color: white;
+       font-size: 40px;
+       padding-top: 10px;
+    }
+
+    #menu-bar-2-container {
+    	 background-color: #B80000;
+         width: 100%;
+    }
+
+   #menu-bar-2 {
+         width: 1250px;
+         margin: auto;
+         height: 45px;
+         position: relative;
+         right: 8px;
+   }
+
+   #menu-bar-2 a {
+        color: white;
+        text-decoration: none;
+        padding: 0 10px;
+        border-right: 1px solid #BB454F;
+        font-size: 14px;
+        position: relative;
+        top: 12px;
+   }
+
+     #menu-bar-2 a:hover {
+     	    text-decoration: underline;
+     }
+
+     .no-border {
+     	   border: none !important;
+     }
+
+     #down-arrow {
+          position: relative;
+          top: 12px;
+          right: 12px;
+     }
+
+    #page-container {
+         width: 1250px;
+         margin: 0 auto;
+
+    }
+
+    h2 {
+      font-weight: normal;
+      font-size: 28px;
+      color: #716C65; 
+      width: 150px;
+    }
+
+    h2 a {
+       color: black;
+       text-decoration: none;
+    }
+
+    h2 a:hover {
+         color: red !important;
+         text-decoration: underline;
+         
+    }
+
+    #article-summary {
+         font-weight: normal;
+         font-size: 15px;
+         color: #5A5A5F;
+         width: 220px; 
+         position: relative;
+         top: -13px;
+         float: left;
+    }
+
+    #list {
+         font-size: 12px;
+         font-weight: bold;
+         position: relative;
+         left: -23px;
+         width: 245px;
+    }
+
+    #list a {
+        color: #716C65;
+        text-decoration: none;
+    }
+
+    #list a:hover {
+          color: red;
+          text-decoration: underline;
+    }
+
+
+    #article-summary img {
+              position: relative;
+              top: 3px;
+    }
+  
+    strong {
+        border-left: 1px solid #DBDBDB;
+        margin-left: 2px;
+        padding-left: 5px;
+    }
+
+    #article-container {
+        float: left;
+        width: 800px;
+    }
+
+     #main-article-image {
+               margin-top: -176px;
+     }
+
+     #list1 {
+        float: left;
+        position: relative;
+        left: -23px;
+        width: 255px;
+        font-weight: bold;
+        font-size: 12px;
+        top: 20px;
+     }
+
+     #list1 a {
+         color: #716C65;
+         text-decoration: none;
+     }
+
+     #list1 a:hover {
+            color: red;
+            text-decoration: underline;
+     }
+
+      #list2 {
+        position: relative;
+        width: 255px;
+        font-weight: bold;
+        font-size: 12px;
+        top: 19px;
+        float: left;
+        right: 27px;
+     }
+
+     #list2 a {
+         color: #716C65;
+         text-decoration: none;
+     }
+
+     #list2 a:hover {
+            color: red;
+            text-decoration: underline;
+     }
+
+     #third-column {
+           float: left;
+           width: 200px;
+           position: relative;   
+           bottom: 175px;
+           right: 110px;
+     }
+
+     h3 {
+        font-size: 16px;
+        width: 210px;
+
+     }
+
+     h3 a {
+        color: #716C65;
+        text-decoration: none;
+     }
+
+     h3 a:hover {
+          color: red;
+          text-decoration: underline;
+     }
+
+     #third-column-article {
+                font-size: 14px;
+                width: 240px;
+     }
+
+</style>
+
+</head>
+<body>
+    
+    <div id="topbar" class="zoom">
+    	
+         <img id="logo" src="images/bbc-logo.png">
+         <div id="account-div">
+           <img id="signin-image" src="images/signinimage.png">
+           <spand id="signin-text">BBC Account</spand>
+         </div>
+         <div id="topbar-section" class="topbar-menu" >    Home
+         </div>
+         <div class="topbar-menu">
+         	 News
+         </div>
+          <div class="topbar-menu">
+         	 Sport
+         </div>
+          <div class="topbar-menu">
+         	 Reel
+         </div>
+          <div class="topbar-menu">
+         	 Worklife
+         </div>
+         <div class="topbar-menu">
+         	 Travel
+         </div>
+          <div class="topbar-menu">
+         	 Future
+         </div>
+          <div class="topbar-menu">
+         	 Culture
+         </div>
+          <div class="topbar-menu">
+         	 <img src="images/dot-logo.png">
+         </div>
+          <div class="topbar-menu">
+         	 <img id="search-logo" src="images/search-logo.png">
+         	 <input id="search-box" type="text" value="Search BBC" >
+         	
+         </div>         
+
+    </div>
+
+    <div class="clear"></div>
+    
+    <div id="menu-bar-container">
+    	
+         <div id="menu-bar">
+         	
+              <h1>NEWS</h1>
+
+         </div>
+
+          <div class="clear"></div>
+
+         <div id="menu-bar-2-container">
+         	
+             <div id="menu-bar-2">
+             	
+             	  <a href="">Home</a>
+
+                  <a href="">War in Ukarine</a>
+
+                   <a href="">Coronavirus</a>
+
+                  <a href="">Climate</a>
+
+                   <a href="">Video</a>
+
+                  <a href="">World</a>
+
+                   <a href="">Uk</a>
+
+                  <a href="">Business</a>
+
+                   <a href="">Tech</a>
+
+                  <a href="">Science</a>
+
+                   <a href="">Stories</a>
+
+                  <a href="">Entertainment & Arts</a>
+
+                   <a href="">Health</a>
+
+                  <a href="">World News TV</a>
+                 
+                  <a href="" class="no-border">More</a>
+
+                  <img id="down-arrow" src="images/down-arrow.png">
+
+             </div>
+
+         </div>
+
+    </div>
+
+    <div class="clear"></div>
+
+    <div id="page-container">
+
+        <div id="main-article">
+        
+       <h2><a href="">Sri Lanka elects new president opposed by many</a></h2>
+
+        <div id="article-container">
+
+        <div id="article-summary">
+            
+            <p>Rani Wickremesinghe is allied with the former leaders and so deeply unpopular with Sri Lankan public.</p>
+
+            <p><img src="images/timer-logo.png"> 2h  <strong>Asia</strong></p>
+            
+
+            <div id="list">
+            
+            <ul>
+                
+                <li><a href="">Can Sri Lanka's new president bring unity?</a></li>
+            
+            </ul>
+            
+               </div>
+            
+            </div>
+
+            <img id="main-article-image" src="images/main-article-image.png">
+
+             <div id="list1">
+            
+            <ul>
+                
+                <li><a href="">The hard choices Sri Lankans must make now</a></li>
+            
+                
+            </ul>
+            
+               </div>
+
+               <div id="list2">
+            
+            <ul>
+                                         
+                 <li><a href="">Why is Sri Lanka in crisis?</a></li>
+
+            </ul>
+            
+                </div>
+
+             </div>
+
+          </div>
+          <div id="third-column">                      <img src="images/wild-fire-logo.png">
+          <h3><a href="">Wildfires rage as heatwave moves across Europe</a></h3>
+          <div id="third-column-article">
+          <p>Though temperatures in the south-west have cooled, fires continue to born in Greece, Spain and Italy.</p>
+          </div>
+
+        </div>
+
+
+
+
+       </div>
+
+       
+
+      
+
+</body>
+</html>
